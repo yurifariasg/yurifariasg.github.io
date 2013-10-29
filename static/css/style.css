@@ -1,0 +1,132 @@
+@font-face{
+	font-family: "Cabin";
+	src: url('../fonts/Cabin-Regular.ttf');
+    src: local("Cabin"), url('../fonts/Cabin-Regular.ttf');
+}
+
+#home
+{
+	display:block;
+	height: auto;
+	position: relative;
+}
+
+#home h1, h2
+{
+	color: #AA2930;
+}
+
+#home h1
+{
+	color: #E0000B;
+	top: 70%;
+	position: absolute;
+    font: bold 50px "Cabin";
+}
+
+#home h2
+{
+	top: 80%;
+	left: 10%;
+	width: 400px;
+	position: absolute;
+    font: bold 17px "Cabin";
+    /*background-color: rgba(0,0,0,0.5);
+	border:2px solid #000000;
+	border-radius:10px;
+	padding: 10px*/
+}
+
+html, body
+{
+	margin: 0;
+    padding: 0;
+    height: 100%;
+    font: bold 15px "Cabin";
+}
+#shadow-div
+{
+	width: 100%;
+	height: 100%;
+	box-shadow: 0px 1px 40px #000000 inset;
+	position: absolute;
+}
+
+.menubar
+{
+	margin-bottom: 0px;
+	box-shadow: 0px 2px 20px #000000;
+	background-color: #1f4471;
+	border-color: #000000;
+}
+
+.menubar a
+{
+	color: #ffffff !important;
+}
+
+#home img
+{
+	width: 100%;
+	height: auto;
+	max-width: 100%;
+	vertical-align: middle;
+}
+
+#projects
+{
+	height: auto !important; /* ie6 ignores !important, so this will be overridden below */
+    min-height: 100%; /* ie6 ignores min-height completely */
+    height: 100%;
+    background-color: #d2e4f8;
+	display: table;
+}
+
+#projects h2
+{
+	color: #000000;
+}
+
+#projects div
+{
+	display: table-cell;
+	height: 100%;
+	vertical-align: middle;
+}
+
+#about
+{
+	margin-top: 0px;
+	background-color: #ADA02A;
+	height: auto !important; /* ie6 ignores !important, so this will be overridden below */
+    min-height: 50%; /* ie6 ignores min-height completely */
+    height: 100%;
+	display: table;
+	color: #ffffff !important;
+}
+#about div
+{
+	display: table-cell;
+	height: 100%;
+	vertical-align: middle;
+}
+
+.content
+{
+	padding: 5%;
+
+}
+
+h1
+{
+	margin-left: 10%;
+	display: inline;
+}
+
+.content h2
+{
+	margin-left: 1%;
+	display: inline-block;
+	font-size: 18px;
+	color: #dddddd;
+}
