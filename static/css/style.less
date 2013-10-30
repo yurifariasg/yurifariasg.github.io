@@ -1,0 +1,171 @@
+@font-face{
+	font-family: "Cabin";
+	src: url('../fonts/Cabin-Regular.ttf');
+    src: local("Cabin"), url('../fonts/Cabin-Regular.ttf');
+}
+
+@font-face{
+	font-family: "AlteHaasRegular";
+	src: url('../fonts/AlteHaasGroteskRegular.ttf');
+    src: local("AlteHaasRegular"), url('../fonts/AlteHaasGroteskRegular.ttf');
+}
+
+@font-face{
+	font-family: "AlteHaasBold";
+	src: url('../fonts/AlteHaasGroteskBold.ttf');
+    src: local("AlteHaasBold"), url('../fonts/AlteHaasGroteskBold.ttf');
+}
+
+@main-color: #0F98FA;
+
+@navbar-color: #0F98FA;
+@navbar-font-color: #ffffff;
+
+@bg1-color: #ffffff;
+@bg1-font-color: #626c72;
+@bg1-font2-color: #a5b2b9;
+
+@bg2-color: #a5b2b9;
+@bg2-font-color: #ffffff;
+
+@bg3-color: #31363A;
+@bg3-font-color: #a5b2b9;
+
+#home
+{
+	display:block;
+	height: auto;
+	position: relative;
+}
+
+#home h1, h2
+{
+	margin-left: 4%;
+	color: @main-color;
+}
+
+#home h1
+{
+	color: @main-color;
+	top: 30%;
+	position: absolute;
+    font: bold 500% "AlteHaasRegular";
+}
+
+html, body
+{
+	margin: 0;
+    padding: 0;
+    height: 100%;
+    font: bold 15px "Cabin";
+}
+#shadow-div
+{
+	width: 100%;
+	height: 100%;
+	box-shadow: 0px 1px 10px #000000 inset;
+	position: absolute;
+}
+
+.menubar
+{
+	margin-bottom: 0px;
+	background-color: @navbar-color;
+	border-color: #000000;
+}
+
+.menubar a
+{
+	color: @navbar-font-color !important;
+}
+
+#home img
+{
+	width: 100%;
+	height: auto;
+	max-width: 100%;
+	vertical-align: middle;
+}
+
+#projects
+{
+	height: auto !important; /* ie6 ignores !important, so this will be overridden below */
+    min-height: 100%; /* ie6 ignores min-height completely */
+    height: 100%;
+    background-image: url("../img/bg-repeat.png");
+	display: table;
+}
+
+#projects h2
+{
+	color: #000000;
+}
+
+#projects div
+{
+	display: table-cell;
+	height: 100%;
+	vertical-align: middle;
+}
+
+#about
+{
+	margin-top: 0px;
+	background-color: @bg3-color;
+	height: auto !important; /* ie6 ignores !important, so this will be overridden below */
+    min-height: 50%; /* ie6 ignores min-height completely */
+    height: 100%;
+	display: table;
+	color: @bg3-font-color !important;
+	border: solid #000000 1px;
+}
+#about div
+{
+	display: table-cell;
+	height: 100%;
+	vertical-align: middle;
+}
+
+#contact
+{
+	margin-top: 0px;
+	background-color: @bg3-color;
+	height: auto !important; /* ie6 ignores !important, so this will be overridden below */
+    min-height: 50%; /* ie6 ignores min-height completely */
+    height: 100%;
+	display: table;
+	color: @bg3-font-color !important;
+	border: solid #000000 1px;
+}
+
+.content
+{
+	padding: 5%;
+}
+
+#timeline
+{
+	background-color: @bg2-color;
+	color: @bg2-font-color;
+
+	margin-top: 0px;
+	height: auto !important; /* ie6 ignores !important, so this will be overridden below */
+    min-height: 100%; /* ie6 ignores min-height completely */
+    height: 100%;
+	display: table;
+
+}
+
+h1
+{
+	margin-left: 10%;
+	display: inline;
+}
+
+.content h2
+{
+	margin-left: 1%;
+	display: inline-block;
+	font-size: 18px;
+	color: inherit;
+}
