@@ -34,8 +34,8 @@
 #home
 {
 	display:block;
-	height: auto;
 	position: relative;
+    height: 400px;
 }
 
 #home h1, h2
@@ -79,21 +79,18 @@ html, body
 	color: @navbar-font-color !important;
 }
 
-#home img
-{
-	width: 100%;
-	height: auto;
-	max-width: 100%;
-	vertical-align: middle;
-}
-
 #projects
 {
 	height: auto !important; /* ie6 ignores !important, so this will be overridden below */
     min-height: 100%; /* ie6 ignores min-height completely */
     height: 100%;
-    background-image: url("../img/bg-repeat.png");
 	display: table;
+    padding: 0px;
+    background: url("../img/project-bg.png") 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    color: @bg1-color;
 }
 
 #resume
@@ -120,19 +117,42 @@ html, body
 #about
 {
 	margin-top: 0px;
-	background-color: @bg3-color;
+    background-image: url("../img/bg-repeat.png");
 	height: auto !important; /* ie6 ignores !important, so this will be overridden below */
     min-height: 50%; /* ie6 ignores min-height completely */
     height: 100%;
 	display: table;
-	color: @bg3-font-color !important;
-	border: solid #000000 1px;
 }
 #about div
 {
 	display: table-cell;
 	height: 100%;
 	vertical-align: middle;
+}
+
+#phrase
+{
+  background-color: @bg3-color;
+  color: @bg3-font-color;
+}
+
+#phrase div
+{
+  margin-left:auto;
+  margin-right:auto;
+  width:70%;
+}
+
+#phrase h1
+{
+  margin-left: 0%;
+  text-align: center;
+  display: block;
+  width: 100%;
+}
+#phrase p
+{
+  text-align: right;
 }
 
 #contact
@@ -155,8 +175,8 @@ html, body
 
 #timeline
 {
-	background-color: @bg2-color;
-	color: @bg2-font-color;
+	background-color: @bg1-color;
+	color: @bg1-font-color;
 
 	margin-top: 0px;
 	height: auto !important; /* ie6 ignores !important, so this will be overridden below */
