@@ -7,13 +7,16 @@
     <link href="static/css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link rel="stylesheet/less" type="text/css" href="static/css/style.less?ts=<?=time()?>" />
     <script src="static/js/less-1.5.0.min.js"></script>
+    <script src="static/js/jquery.min.js"></script>
+    <script src="static/js/mustache.min.js"></script>
+    <script src="static/js/page.js"></script>
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="../../assets/js/html5shiv.js"></script>
       <script src="../../assets/js/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
+  <body onload="onLoadBody();">
     <!-- Navbar -->
 
 	<nav class="navbar navbar-default navbar-fixed-top menubar" role="navigation">
@@ -36,15 +39,42 @@
 	</div>
 	<div id="about" class="content">
 		<div>
-			<h1>About.</h1><h2>just a <i>few</i> words</h2>
+			<h1>About. <small>just a few words</small></h1>
 			<p>I am a recent grad student from UFCG - Brazil, former exchange student at Stony Brook University - NY and a 2012 CODE:2040 Summer Fellow. This website is where I keep my resume and experiences up-to-date and hopefully, I'll start a blog here soon enough. Hope you enjoy and any questions, just shoot me an e-mail!</p>
-		</div>
+
+            <div class="tab">
+                <h1>Skills</h1>
+                <ul id="skills-tabs" class="nav nav-tabs">
+                    <li class="active"><a data-toggle="tab" href="#mobile">Mobile Dev</a></li>
+                    <li><a data-toggle="tab" href="#frontend">Frontend</a></li>
+                    <li><a data-toggle="tab" href="#backend">Backend</a></li>
+                    <li><a data-toggle="tab" href="#languages">Languages</a></li>
+                    <li><a data-toggle="tab" href="#others">Others</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div class="row">
+                        <div class="col-md-10 col-md-offset-2">
+                            <p class="col-md-3">Beginner</p>
+                            <p class="col-md-3">Familiar</p>
+                            <p class="col-md-3">Experienced</p>
+                            <p class="col-md-3">Master</p>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade in active" id="mobile"></div>
+                    <div class="tab-pane fade" id="frontend"></div>
+                    <div class="tab-pane fade" id="backend"></div>
+                    <div class="tab-pane fade" id="languages"></div>
+                    <div class="tab-pane fade" id="others"></div>
+                </div>
+            </div>
+
+        </div>
 	</div>
     <div id="phrase" class="content">
-        <div>
-            <h1>"Any sufficiently advanced technology is indistinguishable from <b>magic</b>."</h1>
-            <p>Arthur C. Clarke</p>
-        </div>
+        <blockquote>
+            <p>"Any sufficiently advanced technology is indistinguishable from <b>magic</b>."</p>
+            <small>Arthur C. Clarke</small>
+        </blockquote>
     </div>
     <div id="timeline" class="content">
 
@@ -77,6 +107,21 @@
 		</div>
 
 	</div>
+
+    <div id="skill-row-template" style="display: none">
+        <div class="row">
+            <div class="col-md-2">
+                <p>{{skillName}}</p>
+            </div>
+            <div class="col-md-10">
+                <div class="progress progress-striped">
+                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="{{percentage}}" aria-valuemin="0" aria-valuemax="100" style="width: {{percentage}}%;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="static/js/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->

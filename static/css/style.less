@@ -30,6 +30,7 @@
 
 @bg3-color: #31363A;
 @bg3-font-color: #a5b2b9;
+@grid-columns: 10;
 
 #home
 {
@@ -72,11 +73,9 @@ html, body
 	margin-bottom: 0px;
 	background-color: @navbar-color;
 	border-color: #000000;
-}
-
-.menubar a
-{
-	color: @navbar-font-color !important;
+  a {
+    color: @navbar-font-color !important;
+  }
 }
 
 #projects
@@ -122,37 +121,48 @@ html, body
     min-height: 50%; /* ie6 ignores min-height completely */
     height: 100%;
 	display: table;
-}
-#about div
-{
-	display: table-cell;
-	height: 100%;
-	vertical-align: middle;
+
+    .tab {
+        h1 {
+            font-size: 200%;
+            width: 100%;
+          display:block;
+          text-align: center;
+          margin: 0px;
+        }
+      .tab-content {
+        padding: 2%;
+        .progress-bar-success {
+          background-color: @main-color;
+        }
+      }
+
+        p {
+          text-align: center;
+        }
+
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 #phrase
 {
   background-color: @bg3-color;
   color: @bg3-font-color;
-}
 
-#phrase div
-{
-  margin-left:auto;
-  margin-right:auto;
-  width:70%;
-}
+  div {
+  }
 
-#phrase h1
-{
-  margin-left: 0%;
-  text-align: center;
-  display: block;
-  width: 100%;
-}
-#phrase p
-{
-  text-align: right;
+
+  blockquote {
+    border: 0px;
+    margin-left:auto;
+    margin-right:auto;
+    width:50%;
+
+  }
 }
 
 #contact
@@ -171,6 +181,13 @@ html, body
 .content
 {
 	padding: 5%;
+
+  h2 {
+    margin-left: 1%;
+    display: inline-block;
+    font-size: 18px;
+    color: inherit;
+  }
 }
 
 #timeline
@@ -193,12 +210,4 @@ h1
 {
 	margin-left: 10%;
 	display: inline;
-}
-
-.content h2
-{
-	margin-left: 1%;
-	display: inline-block;
-	font-size: 18px;
-	color: inherit;
 }
