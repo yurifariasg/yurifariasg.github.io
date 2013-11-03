@@ -21,12 +21,12 @@
 
 	<nav class="navbar navbar-default navbar-fixed-top menubar" role="navigation">
 	    <ul class="nav navbar-nav navbar-right" style="padding-right:5%">
-	      <li><a href="#">Home</a></li>
-	      <li><a href="#">About</a></li>
-	      <li><a href="#">Projects</a></li>
-	      <li><a href="#">Timeline</a></li>
-	      <li><a href="#">Resume</a></li>
-	      <li><a href="#">Contact</a></li>
+	      <li><a href="#home">Home</a></li>
+	      <li><a href="#about">About</a></li>
+	      <li><a href="#projects">Projects</a></li>
+	      <li><a href="#timeline">Timeline</a></li>
+	      <li><a href="#skills">Skills</a></li>
+	      <li><a href="#contact">Contact</a></li>
 	    </ul>
 	  </div><!-- /.navbar-collapse -->
 	</nav>
@@ -41,8 +41,80 @@
 		<div>
 			<h1>About. <small>just a few words</small></h1>
 			<p>I am a recent grad student from UFCG - Brazil, former exchange student at Stony Brook University - NY and a 2012 CODE:2040 Summer Fellow. This website is where I keep my resume and experiences up-to-date and hopefully, I'll start a blog here soon enough. Hope you enjoy and any questions, just shoot me an e-mail!</p>
+        </div>
+	</div>
+    <div id="phrase" class="content">
+        <blockquote>
+            <p class="big-text">"Any sufficiently advanced technology is indistinguishable from <b>magic</b>."</p>
+            </br>
+            <small class="big-text">Arthur C. Clarke</small>
+        </blockquote>
+    </div>
+    <div id="skills" class="content">
 
-            <div class="tab">
+        <div>
+            <h1>Skills</h1>
+            <p></p>
+
+
+
+            <div class="skills">
+                <div class="row">
+                    <div class="col-md-6" id="mobile">
+                        <div class="row">
+                            <h3>Mobile Development</h3>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-10 col-md-offset-2">
+                                <p class="col-xs-3">Beginner</p>
+                                <p class="col-xs-3">Familiar</p>
+                                <p class="col-xs-3">Experienced</p>
+                                <p class="col-xs-3">Master</p>
+                            </div>
+                        </div></div>
+                    <div class="col-md-6" id="frontend">
+                        <div class="row">
+                            <h3>Frontend Technologies</h3>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-10 col-md-offset-2">
+                                <p class="col-xs-3"><span class="glyphicon glyphicon-book" style="padding: 2px"></span></p>
+                                <p class="col-xs-3"><span class="glyphicon glyphicon-book" style="padding: 2px"></span><span class="glyphicon glyphicon-book" style="padding: 2px"></span></p>
+                                <p class="col-xs-3"><span class="glyphicon glyphicon-book" style="padding: 2px"></span><span class="glyphicon glyphicon-book" style="padding: 2px"></span><span class="glyphicon glyphicon-book" style="padding: 2px"></span></p>
+                                <p class="col-xs-3"><span class="glyphicon glyphicon-book" style="padding: 2px"></span><span class="glyphicon glyphicon-book" style="padding: 2px"></span><span class="glyphicon glyphicon-book" style="padding: 2px"></span><span class="glyphicon glyphicon-book" style="padding: 2px"></span></p>
+                            </div>
+                        </div></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6" id="backend">
+                        <div class="row">
+                            <h3>Backend Technologies</h3>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-10 col-md-offset-2">
+                                <p class="col-xs-3"><span class="glyphicon glyphicon-flash"></span></p>
+                                <p class="col-xs-3"><span class="glyphicon glyphicon-flash"></span><span class="glyphicon glyphicon-flash"></span></p>
+                                <p class="col-xs-3"><span class="glyphicon glyphicon-flash"></span><span class="glyphicon glyphicon-flash"></span><span class="glyphicon glyphicon-flash"></span></p>
+                                <p class="col-xs-3"><span class="glyphicon glyphicon-flash"></span><span class="glyphicon glyphicon-flash"></span><span class="glyphicon glyphicon-flash"></span><span class="glyphicon glyphicon-flash"></span></p>
+                            </div>
+                        </div></div>
+                    <div class="col-md-6" id="languages">
+                        <div class="row">
+                            <h3>Programming Languages</h3>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-10 col-md-offset-2">
+                                <p class="col-xs-3"><span class="glyphicon glyphicon-ok"></span></p>
+                                <p class="col-xs-3"><span class="glyphicon glyphicon-ok"></span><span class="glyphicon glyphicon-ok"></span></p>
+                                <p class="col-xs-3"><span class="glyphicon glyphicon-ok"></span><span class="glyphicon glyphicon-ok"></span><span class="glyphicon glyphicon-ok"></span></p>
+                                <p class="col-xs-3"><span class="glyphicon glyphicon-ok"></span><span class="glyphicon glyphicon-ok"></span><span class="glyphicon glyphicon-ok"></span><span class="glyphicon glyphicon-ok"></span></p>
+                            </div>
+                        </div></div>
+                </div>
+
+            </div>
+
+            <div class="tab" style="display: none">
                 <h1>Skills</h1>
                 <ul id="skills-tabs" class="nav nav-tabs">
                     <li class="active"><a data-toggle="tab" href="#mobile">Mobile Dev</a></li>
@@ -54,10 +126,10 @@
                 <div class="tab-content">
                     <div class="row">
                         <div class="col-md-10 col-md-offset-2">
-                            <p class="col-md-3">Beginner</p>
-                            <p class="col-md-3">Familiar</p>
-                            <p class="col-md-3">Experienced</p>
-                            <p class="col-md-3">Master</p>
+                            <p class="col-xs-3">Beginner</p>
+                            <p class="col-xs-3">Familiar</p>
+                            <p class="col-xs-3">Experienced</p>
+                            <p class="col-xs-3">Master</p>
                         </div>
                     </div>
                     <div class="tab-pane fade in active" id="mobile"></div>
@@ -69,12 +141,14 @@
             </div>
 
         </div>
-	</div>
-    <div id="phrase" class="content">
-        <blockquote>
-            <p>"Any sufficiently advanced technology is indistinguishable from <b>magic</b>."</p>
-            <small>Arthur C. Clarke</small>
-        </blockquote>
+
+    </div>
+    <div id="projects" class="content">
+        <div>
+            <h1>Projects</h1><h2>where I usually have fun</h2>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.</p>
+        </div>
+    </div>
     </div>
     <div id="timeline" class="content">
 
@@ -84,21 +158,6 @@
         </div>
 
     </div>
-	<div id="projects" class="content">
-		<div>
-			<h1>Projects</h1><h2>where I usually have fun</h2>
-			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.</p>
-		</div>
-	</div>
-	</div>
-	<div id="resume" class="content">
-
-		<div>
-			<h1>Resume</h1><h2>just like the old times</h2>
-			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.</p>
-		</div>
-
-	</div>
 	<div id="contact" class="content">
 
 		<div>
