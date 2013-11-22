@@ -16,6 +16,42 @@
     src: local("AlteHaasBold"), url('../fonts/AlteHaasGroteskBold.ttf');
 }
 
+@font-face{
+  font-family: "Tuffy";
+  src: url('../fonts/Tuffy.ttf');
+  src: local("Tuffy"), url('../fonts/Tuffy.ttf');
+}
+
+@font-face{
+  font-family: "Tuffy-bold";
+  src: url('../fonts/Tuffy-B.ttf');
+  src: local("Tuffy-bold"), url('../fonts/Tuffy-B.ttf');
+}
+
+@font-face{
+  font-family: "DolceVita";
+  src: url('../fonts/Dolce%20Vita.ttf');
+  src: local("DolceVita"), url('../fonts/Dolce%20Vita.ttf');
+}
+
+@font-face{
+  font-family: "BrainFlower";
+  src: url('../fonts/Brain%20Flower%20Euro.ttf');
+  src: local("BrainFlower"), url('../fonts/Brain%20Flower%20Euro.ttf');
+}
+
+@font-face{
+  font-family: "Quicksand";
+  src: url('../fonts/Quicksand-Regular.ttf');
+  src: local("Quicksand"), url('../fonts/Quicksand-Regular.ttf');
+}
+
+@font-face{
+  font-family: "Quicksand-bold";
+  src: url('../fonts/Quicksand-Bold.ttf');
+  src: local("Quicksand-bold"), url('../fonts/Quicksand-Bold.ttf');
+}
+
 @main-color: #0F98FA;
 
 @navbar-color: #0F98FA;
@@ -50,7 +86,7 @@
 	color: @main-color;
 	top: 30%;
 	position: absolute;
-    font: bold 500% "AlteHaasRegular";
+    font: 1000% "AlteHaasRegular";
 }
 
 html, body
@@ -58,13 +94,13 @@ html, body
 	margin: 0;
     padding: 0;
     height: 100%;
-    font: bold 15px "Cabin";
+    font: 15px "Tuffy";
 }
 #shadow-div
 {
 	width: 100%;
 	height: 100%;
-	box-shadow: 0px 1px 10px #000000 inset;
+	//box-shadow: 0px 1px 10px #000000 inset;
 	position: absolute;
 }
 
@@ -73,6 +109,9 @@ html, body
 	margin-bottom: 0px;
 	background-color: @navbar-color;
 	border-color: #000000;
+    border-width: 0px;
+    font-family: "Tuffy";
+  font-size: 18px;
   a {
     color: @navbar-font-color !important;
   }
@@ -102,6 +141,19 @@ html, body
 
   .thumbnail {
     background-color: rgba(255, 255, 255, 0.7);
+    margin-top: 5%;
+    img {
+    margin-top: 3%;
+    }
+
+    h3 {
+      text-align: center;
+      font: 50px "Tuffy-bold";
+      color: #0B7ED1;
+    }
+    p {
+      font: 20px "Quicksand-bold";
+    }
 
   }
 }
@@ -159,6 +211,10 @@ html, body
     min-height: 50%; /* ie6 ignores min-height completely */
     height: 100%;
 	display: table;
+    font-family: "Tuffy";
+    p {
+      font-size: 30px;
+    }
 }
 
 #phrase
@@ -168,6 +224,7 @@ html, body
   text-align: center;
   padding-top: 13%;
   padding-bottom: 13%;
+  font-family: "Tuffy";
 
   blockquote {
     border: 0px;
@@ -179,11 +236,11 @@ html, body
 
   .big-text {
     display: inline;
-    font-size: 2.5em;
+    font-size: 3.5em;
   }
   small.big-text {
     display: block;
-    font-size: 1.0em;
+    font-size: 1.5em;
     margin-right: 8%;
     text-align: right;
   }
@@ -217,6 +274,7 @@ html, body
 
 #timeline
 {
+    display:none;
 	background-color: @bg1-color;
 	color: @bg1-font-color;
 
@@ -224,7 +282,7 @@ html, body
 	height: auto !important; /* ie6 ignores !important, so this will be overridden below */
     min-height: 100%; /* ie6 ignores min-height completely */
     height: 100%;
-	display: table;
+	//display: table;
 
 	font-family: 'Open Sans', sans-serif;
 	font: 20px "Open Sans", sans-serif;
@@ -233,6 +291,12 @@ html, body
 
 h1
 {
-	margin-left: 10%;
+	margin-left: 3%;
 	display: inline;
+    font-size: 500%;
+  font-family: "Tuffy-bold";
+
+  small {
+    display: none;
+  }
 }
