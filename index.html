@@ -9,7 +9,6 @@
     <script src="static/js/less-1.5.0.min.js"></script>
     <script src="static/js/jquery.min.js"></script>
     <script src="static/js/mustache.min.js"></script>
-    <script src="static/js/page.js"></script>
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="../../assets/js/html5shiv.js"></script>
@@ -45,82 +44,60 @@
 
 	<div id="home">
     	<div id="shadow-div"></div>
-    	<h1>Hello, I'm Yuri</h1>
+    	<h1>Hello, I am Yuri<small>This website is where I keep some information about my experience, career and more... Feel free to check it out!</small></h1>
     	<!--<img src="static/img/yuri.png" class="img-responsive"/>-->
 	</div>
-	<div id="about" class="content">
-		<div>
+	<div id="about" class="section">
+		<div class="content">
 			<h1>About. <small>just a few words</small></h1>
 			<p>I am a recent grad student from UFCG - Brazil, former exchange student at Stony Brook University - NY and a 2012 CODE:2040 Summer Fellow. This website is where I keep my resume and experiences up-to-date and hopefully, I'll start a blog here soon enough. Hope you enjoy and any questions, just shoot me an e-mail!</p>
         </div>
 	</div>
-    <div id="phrase" class="content">
+    <div id="phrase">
         <blockquote>
             <p class="big-text">"Any sufficiently advanced technology is indistinguishable from <b>magic</b>."</p>
-            </br>
+            <br>
             <small class="big-text">Arthur C. Clarke</small>
         </blockquote>
     </div>
-    <div id="skills" class="content">
+    <div id="skills" class="section">
 
-        <div>
+        <div class="content">
             <h1>Coding skills</h1>
             <p></p>
 
-
-
             <div class="skills">
                 <div class="row">
-                    <div class="col-md-6" id="mobile">
+                    <div class="col-md-12" id="mobile">
+                        <div class="row">
+                            <div class="col-md-10 col-md-offset-2">
+                                <p class="col-xs-3">Know some stuff</p>
+                                <p class="col-xs-3">Used it for a while</p>
+                                <p class="col-xs-3">Had worked with it before</p>
+                                <p class="col-xs-3">Knows (almost) all the tricks</p>
+                            </div>
+                        </div>
                         <div class="row">
                             <h3>Mobile Development</h3>
                         </div>
-                        <div class="row">
-                            <div class="col-md-10 col-md-offset-2">
-                                <p class="col-xs-3">Beginner</p>
-                                <p class="col-xs-3">Familiar</p>
-                                <p class="col-xs-3">Experienced</p>
-                                <p class="col-xs-3">Master</p>
-                            </div>
-                        </div></div>
-                    <div class="col-md-6" id="frontend">
+                    </div>
+                    <div class="col-md-12" id="frontend">
                         <div class="row">
                             <h3>Frontend Technologies</h3>
                         </div>
-                        <div class="row">
-                            <div class="col-md-10 col-md-offset-2">
-                                <p class="col-xs-3">Beginner</p>
-                                <p class="col-xs-3">Familiar</p>
-                                <p class="col-xs-3">Experienced</p>
-                                <p class="col-xs-3">Master</p>
-                            </div>
-                        </div></div>
+                    </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-6" id="backend">
+                    <div class="col-md-12" id="backend">
                         <div class="row">
                             <h3>Backend Technologies</h3>
                         </div>
-                        <div class="row">
-                            <div class="col-md-10 col-md-offset-2">
-                                <p class="col-xs-3">Beginner</p>
-                                <p class="col-xs-3">Familiar</p>
-                                <p class="col-xs-3">Experienced</p>
-                                <p class="col-xs-3">Master</p>
-                            </div>
-                        </div></div>
-                    <div class="col-md-6" id="languages">
+                    </div>
+                    <div class="col-md-12" id="languages">
                         <div class="row">
                             <h3>Programming Languages</h3>
                         </div>
-                        <div class="row">
-                            <div class="col-md-10 col-md-offset-2">
-                                <p class="col-xs-3">Beginner</p>
-                                <p class="col-xs-3">Familiar</p>
-                                <p class="col-xs-3">Experienced</p>
-                                <p class="col-xs-3">Master</p>
-                            </div>
-                        </div></div>
+                    </div>
                 </div>
 
             </div>
@@ -154,14 +131,14 @@
         </div>
 
     </div>
-    <div id="projects" class="content">
-        <div>
+    <div id="projects" class="section">
+        <div class="content">
             <div class="container-header">
             <h1>Projects <small>where I usually have fun</small></h1>
             </div>
 
             <div class="row">
-                <div class="col-sm-6 col-md-4">
+                <div class="col-sm-12">
                     <div class="thumbnail">
                         <img style="border-radius: 1%" src="static/img/proj1.png" data-src="holder.js/300x200" alt="...">
                         <div class="caption">
@@ -170,7 +147,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-4">
+                </div>
+            <div class="row">
+                <div class="col-sm-12">
                     <div class="thumbnail">
                         <img src="static/img/proj1.png" data-src="holder.js/300x200" alt="...">
                         <div class="caption">
@@ -179,7 +158,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-4">
+                </div>
+            <div class="row">
+                <div class="col-sm-12">
                     <div class="thumbnail">
                         <img src="static/img/proj1.png" data-src="holder.js/300x200" alt="...">
                         <div class="caption">
@@ -192,20 +173,21 @@
         </div>
     </div>
     </div>
-    <div id="timeline" class="content">
+    <div id="timeline" class="section">
 
-        <div>
+        <div class="content">
             <h1>Timeline<small>keeping track of the past</small></h1>
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.</p>
         </div>
 
     </div>
-	<div id="contact" class="content">
+	<div id="contact" class="section">
 
-		<div>
+		<div class="content">
 			<h1>Contact <small>the way to keep in touch</small></h1>
 			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.</p>
-		</div>
+            <div id="map-canvas"></div>
+        </div>
 
 	</div>
 
@@ -227,6 +209,8 @@
     <script src="static/js/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="static/js/bootstrap.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+    <script src="static/js/page.js"></script>
   </body>
 </html>
 

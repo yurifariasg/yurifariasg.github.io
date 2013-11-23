@@ -46,3 +46,23 @@ var onLoadBody = function() {
     Page.addSkill("others", "Apache Solr", "50");
 
 }
+
+var map;
+function initialize() {
+
+    var myLatLon =  new google.maps.LatLng(-7.217033, -35.91045);
+
+    var mapOptions = {
+        zoom: 16,
+        center: myLatLon
+    };
+    map = new google.maps.Map(document.getElementById('map-canvas'),
+        mapOptions);
+
+    var marker = new google.maps.Marker({
+        position: myLatLon,
+        map: map
+    });
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
