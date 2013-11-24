@@ -1,17 +1,21 @@
-
-
-$('#skills-tabs a').click(function (e) {
-    console.log("Clicked");
-    e.preventDefault();
-    $(this).tab('show');
-});
-
 var Page = {
 
     addSkill: function(section, name, percentage) {
         var sectionObj = $("#" + section);
         var skillTemplate = $("#skill-row-template").html()
-        var output = Mustache.render(skillTemplate, {skillName: name, percentage: percentage});
+
+        var comment;
+        if (percentage <= 25)
+            comment = "knows some stuff";
+        else if (percentage <= 50)
+            comment = "used it for a while";
+        else if (percentage <= 75)
+            comment = "worked with it before";
+        else
+            comment = "knows the tricks";
+
+
+        var output = Mustache.render(skillTemplate, {skillName: name, percentage: percentage, comment: comment});
         sectionObj.append(output)
         sectionObj.add(output);
     }

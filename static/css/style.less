@@ -52,6 +52,12 @@
   src: local("Quicksand-bold"), url('../fonts/Quicksand-Bold.ttf');
 }
 
+@font-face{
+  font-family: "Corbert";
+  src: url('../fonts/Corbert-Regular.ttf');
+  src: local("Corbert"), url('../fonts/Corbert-Regular.ttf');
+}
+
 @main-color: #0F98FA;
 
 @navbar-color: #0F98FA;
@@ -85,13 +91,78 @@
 {
 	color: @main-color;
 	top: 30%;
-    font: 1000% "AlteHaasRegular";
     display: block;
     width:60%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 10%;
+    text-align: center;
 }
+
+@media screen and (min-width: 300px)
+{
+  #home h1{
+    font: 100% "AlteHaasRegular";
+  }
+
+  #phrase {
+    font-size: 30%;
+  }
+  .content {
+    font-size: 70%;
+  }
+}
+
+@media screen and (min-width: 600px)
+{
+  #home h1{
+    font: 350% "AlteHaasRegular";
+  }
+
+  #phrase {
+    font-size: 50%;
+  }
+
+  .content {
+    font-size: 70%;
+  }
+}
+
+@media screen and (min-width: 1000px)
+{
+  #home h1{
+    font: 550% "AlteHaasRegular";
+  }
+
+  #phrase {
+    font-size: 80%;
+  }
+
+  .content {
+    font-size: 80%;
+  }
+}
+
+@media screen and (min-width: 1440px)
+{
+  #home h1{
+    font: 800% "AlteHaasRegular";
+  }
+
+  #phrase {
+    font-size: 100%;
+  }
+
+  .content {
+    font-size: 100%;
+  }
+}
+
+
+
+
+
+
 
 html, body
 {
@@ -114,11 +185,28 @@ html, body
 	background-color: @navbar-color;
 	border-color: #000000;
     border-width: 0px;
-    font-family: "Tuffy";
+    font-family: "Corbert";
+  -webkit-font-smoothing: antialiased;
   font-size: 18px;
   a {
     color: @navbar-font-color !important;
   }
+
+  li:hover {
+    background-color: #39b3d7;
+  }
+
+  li.active {
+    a {
+      color: @main-color !important;
+      //background-color: #2aabd2 !important;
+    }
+  }
+}
+
+.scroll-adjust{
+  padding-top:40px;
+  margin-top:-40px;
 }
 
 .container-header {
@@ -177,6 +265,7 @@ html, body
   width: 80%;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 5%;
 }
 
 #skills
@@ -190,6 +279,7 @@ html, body
 
   .progress-bar-success {
     background-color: @main-color;
+    font-size: 15px;
   }
 
   .tab {
@@ -274,11 +364,16 @@ html, body
   width: 100%;
 }
 
+.content.small {
+  max-width: 1024px;
+
+}
+
 .content
 {
 	padding: 5%;
     width: 100%;
-    max-width: 1024px;
+  max-width: 80%;
   margin-left: auto;
   margin-right: auto;
 
