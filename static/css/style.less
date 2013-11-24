@@ -29,18 +29,6 @@
 }
 
 @font-face{
-  font-family: "DolceVita";
-  src: url('../fonts/Dolce%20Vita.ttf');
-  src: local("DolceVita"), url('../fonts/Dolce%20Vita.ttf');
-}
-
-@font-face{
-  font-family: "BrainFlower";
-  src: url('../fonts/Brain%20Flower%20Euro.ttf');
-  src: local("BrainFlower"), url('../fonts/Brain%20Flower%20Euro.ttf');
-}
-
-@font-face{
   font-family: "Quicksand";
   src: url('../fonts/Quicksand-Regular.ttf');
   src: local("Quicksand"), url('../fonts/Quicksand-Regular.ttf');
@@ -74,102 +62,70 @@
 @bg3-font-color: #a5b2b9;
 @grid-columns: 10;
 
-#home
-{
-	display:block;
-	position: relative;
-    height: 400px;
-}
-
-#home h1, h2
-{
-	margin-left: 4%;
-	color: @main-color;
-}
-
-#home h1
-{
-	color: @main-color;
-	top: 30%;
-    display: block;
-    width:60%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10%;
-    text-align: center;
-}
 
 @media screen and (min-width: 300px)
 {
-  #home h1{
-    font: 100% "AlteHaasRegular";
-  }
-
-  #phrase {
-    font-size: 30%;
-  }
-  .content {
-    font-size: 70%;
+  body {
+    font-size: 30px;
   }
 }
 
 @media screen and (min-width: 600px)
 {
-  #home h1{
-    font: 350% "AlteHaasRegular";
-  }
-
-  #phrase {
-    font-size: 50%;
-  }
-
-  .content {
-    font-size: 70%;
+  body {
+    font-size: 35px;
   }
 }
 
 @media screen and (min-width: 1000px)
 {
-  #home h1{
-    font: 550% "AlteHaasRegular";
-  }
-
-  #phrase {
-    font-size: 80%;
-  }
-
-  .content {
-    font-size: 80%;
+  body {
+    font-size: 40px;
   }
 }
 
 @media screen and (min-width: 1440px)
 {
-  #home h1{
-    font: 800% "AlteHaasRegular";
-  }
-
-  #phrase {
-    font-size: 100%;
-  }
-
-  .content {
-    font-size: 100%;
+  body {
+    font-size: 50px;
   }
 }
 
+#home
+{
+	display:block;
+	position: relative;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    h1 {
+     font-size: 200%;
+      font-family: "Tuffy-bold";
+    }
+    small {
+      display: block;
+      position: relative;
+      right: 0;
+      font-size: 30%;
+      font-family: "Tuffy";
+    }
+}
 
-
-
-
-
+#home h1
+{
+	color: @main-color;
+    display: block;
+    width:80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
 
 html, body
 {
 	margin: 0;
     padding: 0;
     height: 100%;
-    font: 15px "Tuffy";
+    //font: 15px "Tuffy";
 }
 #shadow-div
 {
@@ -181,13 +137,13 @@ html, body
 
 .menubar
 {
+    font-size: 15px;
 	margin-bottom: 0px;
 	background-color: @navbar-color;
 	border-color: #000000;
     border-width: 0px;
     font-family: "Corbert";
   -webkit-font-smoothing: antialiased;
-  font-size: 18px;
   a {
     color: @navbar-font-color !important;
   }
@@ -201,6 +157,23 @@ html, body
       color: @main-color !important;
       //background-color: #2aabd2 !important;
     }
+  }
+}
+
+.social-networks {
+  background-color: @main-color;
+  vertical-align: middle;
+  text-align: center;
+  display: table;
+  width: 100%;
+  .social-icon {
+    fill: white;
+    display: table-cell;
+    svg {
+      margin-top: 5%;
+      display: table-cell;
+    }
+
   }
 }
 
@@ -251,16 +224,6 @@ html, body
 
   }
 }
-/*
-
-#projects div
-{
-	display: table-cell;
-	height: 100%;
-	vertical-align: middle;
-}
-
-*/
 .skills {
   width: 80%;
   margin-left: auto;
@@ -273,48 +236,24 @@ html, body
 	height: auto !important; /* ie6 ignores !important, so this will be overridden below */
     min-height: 100%; /* ie6 ignores min-height completely */
     height: 100%;
-    background-image: url("../img/bg-repeat.png");
+    background-color: @bg1-color;
 	display: table;
+}
 
-
-  .progress-bar-success {
-    background-color: @main-color;
-    font-size: 15px;
-  }
-
-  .tab {
-    h1 {
-      font-size: 200%;
-      width: 100%;
-      display:block;
-      text-align: center;
-      margin: 0px;
-    }
-    .tab-content {
-      padding: 2%;
-    }
-
-    p {
-      text-align: center;
-    }
-
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-  }
+.progress-bar-success {
+  background-color: @main-color;
 }
 
 #about
 {
 	margin-top: 0px;
-    background-image: url("../img/bg-repeat.png");
+    background-color: @bg1-color;
 	height: auto !important; /* ie6 ignores !important, so this will be overridden below */
     min-height: 50%; /* ie6 ignores min-height completely */
     height: 100%;
 	display: table;
     font-family: "Tuffy";
     p {
-      font-size: 30px;
     }
 }
 
@@ -336,14 +275,14 @@ html, body
   }
 
   .big-text {
-    display: inline;
-    font-size: 3.5em;
+    font-size: 80%;
+    display: inline-block;
   }
   small.big-text {
     display: block;
-    font-size: 1.5em;
     margin-right: 8%;
     text-align: right;
+    font-size: 60%;
   }
 }
 
@@ -358,6 +297,9 @@ html, body
 	color: @bg2-font-color !important;
     box-shadow: 0px 1px 10px #000000 inset;
 	border: solid #000000 1px;
+  p {
+    font-size: 35%;
+  }
 }
 
 .section {
@@ -377,11 +319,22 @@ html, body
   margin-left: auto;
   margin-right: auto;
 
+  h1
+  {
+    margin-left: 3%;
+    display: inline;
+    font-family: "Tuffy-bold";
+    font-size: 150%;
+  }
+
   h2 {
     margin-left: 1%;
     display: inline-block;
-    font-size: 18px;
     color: inherit;
+  }
+
+  p {
+    font-size: 55%;
   }
 }
 
@@ -397,22 +350,9 @@ html, body
     height: 100%;
 	//display: table;
 
-	font-family: 'Open Sans', sans-serif;
-	font: 20px "Open Sans", sans-serif;
-
 }
 
-h1
-{
-	margin-left: 3%;
-	display: inline;
-    font-size: 500%;
-  font-family: "Tuffy-bold";
 
-  small {
-    display: none;
-  }
-}
 
 #map-canvas {
   width: 80%;

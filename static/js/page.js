@@ -6,13 +6,13 @@ var Page = {
 
         var comment;
         if (percentage <= 25)
-            comment = "knows some stuff";
+            comment = "beginner";
         else if (percentage <= 50)
-            comment = "used it for a while";
+            comment = "novice";
         else if (percentage <= 75)
-            comment = "worked with it before";
+            comment = "experienced";
         else
-            comment = "knows the tricks";
+            comment = "experienced++";
 
 
         var output = Mustache.render(skillTemplate, {skillName: name, percentage: percentage, comment: comment});
@@ -70,3 +70,10 @@ function initialize() {
 }
 
 google.maps.event.addDomListener(window, 'load', initialize);
+
+$(function() {
+    $('#nav-bar-menu').bind('click', 'ul li a', function(event) {
+        event.preventDefault();
+        $.scrollTo(event.target.hash, 250);
+    });
+});
