@@ -77,3 +77,23 @@ $(function() {
         $.scrollTo(event.target.hash, 250);
     });
 });
+
+$(".social-icon svg").on("click", function(event) {
+    var name = $(this).parent().attr("id");
+    var url = "";
+    if (name == "facebook") {
+        url = "https://www.facebook.com/yurifariasg";
+    } else if (name == "gplus") {
+        url = "https://plus.google.com/+YuriFariasGomes";
+    } else if (name == "github") {
+        url = "https://github.com/yurifariasg";
+    } else if (name == "instagram") {
+        url = "http://instagram.com/yurifg";
+    } else if (name == "twitter") {
+        url = "https://twitter.com/yurifariasg";
+    } else if (name == "linkedin") {
+        url = "http://br.linkedin.com/pub/yuri-farias-gomes/35/52b/488/en";
+
+    }
+    window.open(url);
+});

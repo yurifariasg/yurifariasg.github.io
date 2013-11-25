@@ -142,8 +142,8 @@ html, body
 	background-color: @navbar-color;
 	border-color: #000000;
     border-width: 0px;
-    font-family: "Corbert";
-  -webkit-font-smoothing: antialiased;
+    font-family: Open Sans,Source Sans Pro,Helvetica,Arial,sans-serif;;
+    -webkit-font-smoothing: antialiased;
   a {
     color: @navbar-font-color !important;
   }
@@ -155,6 +155,7 @@ html, body
   li.active {
     a {
       color: @main-color !important;
+      background-color: #ffffff !important;
       //background-color: #2aabd2 !important;
     }
   }
@@ -172,6 +173,12 @@ html, body
     svg {
       margin-top: 5%;
       display: table-cell;
+      cursor: pointer;
+    }
+
+    svg:hover {
+      fill: #D9D9D9;
+
     }
 
   }
