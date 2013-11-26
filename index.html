@@ -10,6 +10,8 @@
     <script src="static/js/jquery.min.js"></script>
     <script src="static/js/mustache.min.js"></script>
     <link rel="icon" type="image/png" href="static/img/favicon.ico">
+    <link rel="image_src" href="static/img/thumbnail.jpg">
+    <meta property="og:image" content="static/img/thumbnail.jpg" />
   </head>
   <body onload="onLoadBody();">
     <!-- Navbar -->
@@ -149,13 +151,12 @@
             <div class="content">
                 <h1>Contact</h1>
                 <div class="row">
-                    <div class="col-md-6">
-                        <form id="contact-form">
-                            <textarea id="comment" rows="6" class="form-control" placeholder="What's up?"></textarea>
-                            <input id="email" type="text" class="form-control" placeholder="your@e-mail.com">
-                            <input id="name" type="text" class="form-control" placeholder="Name">
-                            <button id="contact-bt" class="btn btn-primary btn-centered">Send!</button>
-                        </form>
+                    <div class="col-md-6" style="margin-top: 2%">
+                        <h4>Email:</h4>
+                        <a href="mailto:yurifariasg@gmail.com"> <address>yurifariasg@gmail.com</address></a>
+                        <h4>Phone:</h4>
+                        <address>+55 83 81052486 (Vivo)<br>
+                            +1 631 703 8443 (Google Voice)</address>
                     </div>
                     <div class="col-md-6">
                         <div id="map-canvas"></div>
