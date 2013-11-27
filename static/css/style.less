@@ -255,6 +255,9 @@ html, body
   margin-left: auto;
   margin-right: auto;
   margin-top: 5%;
+  div p {
+    font-size: 35%;
+  }
 }
 
 #skills
@@ -377,7 +380,6 @@ html, body
 
 #timeline
 {
-    display:none;
 	background-color: @bg1-color;
 	color: @bg1-font-color;
 
@@ -386,6 +388,84 @@ html, body
     min-height: 100%; /* ie6 ignores min-height completely */
     height: 100%;
 	//display: table;
+
+  .line {
+    background: url('/static/img/bg-timeline.png') center repeat-y;
+    width: 970px;
+    list-style: none;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 0px;
+    font-size: 40%;
+
+    li {
+      position: relative;
+    }
+  }
+
+  .year {
+    clear: both;
+    span {
+      border: 1px solid #0f98fa;
+      padding: 6px 12px;
+      background-color: #ffffff;
+      -moz-border-radius: 2px;
+      -webkit-border-radius: 2px;
+      display: inline-block;
+    }
+    background-color: transparent;
+    text-align: center;
+    float: none;
+    width: 100%;
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
+  }
+  .year.middle {
+    margin-top: 10%;
+  }
+
+  .event {
+    text-align: center;
+    h3 {
+      margin: 0px;
+    }
+    h4 {
+      margin: 0px;
+      font-size: 80%;
+    }
+    span {
+      font-size: 70%;
+    }
+    p {
+      text-align: left;
+    }
+    width: 43%;
+    border: 1px solid #0f98fa;
+    padding: 12px;
+
+    margin: 100px 0 0;
+
+  }
+
+  .event.right {
+    float: right;
+    margin-top: 0;
+  }
+
+  .event:after {
+    content: ' ';
+    display: block;
+    height: 1px;
+    position: absolute;
+    right: -70px;
+    top: 60px;
+    width: 70px;
+    background-color: @main-color;
+  }
+  .event.right:after {
+    left: -70px;
+  }
 
 }
 
