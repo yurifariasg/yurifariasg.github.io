@@ -1,10 +1,10 @@
 var Page = {
 
-    addSkill: function(section, name, percentage) {
+    addSkill: function(section, name) {
         var sectionObj = $("#" + section);
-        var skillTemplate = $("#skill-row-template").html()
+        var skillTemplate = $("#skill-badge-template").html()
 
-        var comment;
+        /*var comment;
         if (percentage <= 25)
             comment = "beginner";
         else if (percentage <= 50)
@@ -12,10 +12,10 @@ var Page = {
         else if (percentage <= 75)
             comment = "experienced";
         else
-            comment = "experienced++";
+            comment = "experienced++";*/
 
 
-        var output = Mustache.render(skillTemplate, {skillName: name, percentage: percentage, comment: comment});
+        var output = Mustache.render(skillTemplate, {skillName: name});
         sectionObj.append(output)
         sectionObj.add(output);
     }
@@ -26,7 +26,36 @@ var Page = {
 
 var onLoadBody = function() {
 
-    Page.addSkill("mobile", "Android", "75");
+    Page.addSkill("working-skills", "Android");
+    Page.addSkill("working-skills", "Python");
+    Page.addSkill("working-skills", "Java");
+    Page.addSkill("working-skills", "C#");
+    Page.addSkill("working-skills", ".NET");
+    Page.addSkill("working-skills", "HTML");
+    Page.addSkill("working-skills", "CSS");
+    Page.addSkill("working-skills", "Javascript");
+    Page.addSkill("working-skills", "GIT");
+    Page.addSkill("working-skills", "SVN");
+    Page.addSkill("working-skills", "Python");
+    Page.addSkill("working-skills", "Tomcat");
+    Page.addSkill("working-skills", "OpenGL ES 1.1");
+
+
+    Page.addSkill("basic-skills", "iOS");
+    Page.addSkill("basic-skills", "Qt");
+    Page.addSkill("basic-skills", "Grails");
+    Page.addSkill("basic-skills", "Flask");
+    Page.addSkill("basic-skills", "C++");
+    Page.addSkill("basic-skills", "C");
+    Page.addSkill("basic-skills", "Lua");
+    Page.addSkill("basic-skills", "MySQL");
+    Page.addSkill("basic-skills", "OpenGL");
+    Page.addSkill("basic-skills", "Grails");
+    Page.addSkill("basic-skills", "Photoshop CS3");
+    Page.addSkill("basic-skills", "Unity");
+
+
+    /*Page.addSkill("mobile", "Android", "75");
     Page.addSkill("mobile", "iOS", "25");
     Page.addSkill("mobile", "Qt/S60", "50");
 
@@ -47,7 +76,7 @@ var onLoadBody = function() {
 
     Page.addSkill("others", "MySQL", "50");
     Page.addSkill("others", "Tomcat", "75");
-    Page.addSkill("others", "Apache Solr", "50");
+    Page.addSkill("others", "Apache Solr", "50");*/
 
 }
 
@@ -97,3 +126,5 @@ $(".social-icon svg").on("click", function(event) {
     }
     window.open(url);
 });
+
+$("body").show()

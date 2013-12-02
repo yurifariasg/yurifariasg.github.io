@@ -13,7 +13,7 @@
     <link rel="image_src" href="static/img/thumbnail.jpg">
     <meta property="og:image" content="http://ygom.es/static/img/thumbnail.jpg" />
   </head>
-  <body onload="onLoadBody();">
+  <body style="display: none" onload="onLoadBody();">
     <!-- Navbar -->
 
 	<nav id="nav-bar-menu" class="navbar navbar-default navbar-fixed-top menubar topbar" data-scrollspy="scrollspy" data-offset-top="0"  role="navigation">
@@ -31,7 +31,7 @@
               <li><a href="#home">HOME</a></li>
               <li><a href="#about">ABOUT</a></li>
               <li><a href="#skills">SKILLS</a></li>
-              <li><a href="#projects">PROJECTS</a></li>
+              <!--<li><a href="#projects">PROJECTS</a></li>-->
               <li><a href="#timeline">TIMELINE</a></li>
               <li><a href="#contact">CONTACT</a></li>
             </ul>
@@ -68,6 +68,7 @@
             <div class="content">
                 <h1>About.</h1>
                 <p>I am a recent grad student from UFCG - Brazil, former exchange student at Stony Brook University - NY and a 2012 CODE:2040 Summer Fellow. This website is where I keep my resume and experiences up-to-date and hopefully, I'll start a blog here soon enough. Hope you enjoy and any questions, just shoot me an e-mail!</p>
+
             </div>
         </div>
         <div id="phrase">
@@ -80,22 +81,34 @@
 
             <div class="content">
                 <h1>Coding skills</h1>
-                <p></p>
-
                 <div class="skills">
-                    <div class="row">
-                        <div class="col-md-12" id="mobile">
-                        </div>
-                        <div class="col-md-12" id="frontend">
-                        </div>
-                        <div class="col-md-12" id="backend">
-                        </div>
-                        <div class="col-md-12" id="languages">
-                        </div>
+                    <h4>Working knowledge</h4>
+                    <h5>These are <i>some</i> of the skills that I've worked and I'm comfortable using.</h5>
+                    <div id="working-skills" class="skills-badges">
                     </div>
 
-                </div>
+                    <h4>Basic knowledge</h4>
+                    <h5>These are the skills that I've played with and have a basic understanding of their purpose and usage.</h5>
+                    <div id="basic-skills" class="skills-badges"></div>
 
+
+                    <h4>Coding samples</h4>
+                    <h5>Also, feel free to check out any of these sources for coding samples and my statistics related to competitive programming.</h5>
+                    <div id="coding-samples" class="skills-badges">
+                        <button type="button" class="btn btn-info" value="Open Window" onclick="window.open('http://uhunt.felix-halim.net/id/77665');">
+                            UVa
+                        </button>
+                        <button type="button" class="btn btn-info" value="Open Window" onclick="window.open('http://codeforces.com/profile/yurifariasg');">
+                            Codeforces
+                        </button>
+                        <button type="button" class="btn btn-info" value="Open Window" onclick="window.open('https://code.google.com/u/yurifariasg/');">
+                            Google Code
+                        </button>
+                        <button type="button" class="btn btn-info" value="Open Window" onclick="window.open('https://github.com/yurifariasg');">
+                            GitHub
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
         <div id="projects" class="section">
@@ -148,11 +161,26 @@
                         <span>Present</span>
                     </li>
                     <li class="event">
+                        <a href="http://www.crunchbase.com/company/signove" target="_blank">
+                            <div class="event-img thumbnail">
+                                <div style="display: table-cell">
+                                    <img style="border-radius: 1%" src="static/img/signove.png" data-src="holder.js/300x200" alt="...">
+                                </div>
+                            </div>
+                        </a>
                         <h3>Part-Time Software Developer</h3>
+                        <h4>Signove</h4>
                         <span>May 2013 - Present</span>
                         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
                     </li>
                     <li class="event right">
+                        <a href="http://www.embeddedlab.org/" target="_blank">
+                            <div class="event-img thumbnail">
+                                <div style="display: table-cell">
+                                    <img class="img-responsive" style="border-radius: 1%" src="static/img/embedded.jpg" data-src="holder.js/300x200" alt="...">
+                                </div>
+                            </div>
+                        </a>
                         <h3>R&D Developer</h3>
                         <h4>Embedded Lab</h4>
                         <span>January 2013 - May 2013</span>
@@ -162,17 +190,38 @@
                         <span>2013</span>
                     </li>
                     <li class="event">
+                        <a href="http://www.crunchbase.com/company/jawbone" target="_blank">
+                            <div class="event-img thumbnail">
+                                <div style="display: table-cell">
+                                    <img style="border-radius: 1%" src="static/img/jawbone.png" data-src="holder.js/300x200" alt="...">
+                                </div>
+                            </div>
+                        </a>
                         <h3>Software Engineer Intern</h3>
                         <h4>Jawbone</h4>
                         <span>May 2012 - August 2012</span>
                         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
                     </li>
                     <li class="event right">
+                        <a href="http://www.crunchbase.com/company/code2040" target="_blank">
+                            <div class="event-img thumbnail">
+                                <div style="display: table-cell">
+                                    <img style="border-radius: 1%" src="static/img/code2040.png" data-src="holder.js/300x200" alt="...">
+                                </div>
+                            </div>
+                        </a>
                         <h3>CODE:2040 Fellow</h3>
                         <span>May 2012 - Present</span>
                         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
                     </li>
                     <li class="event">
+                        <a href="http://www.stonybrook.edu/" target="_blank">
+                            <div class="event-img thumbnail">
+                                <div style="display: table-cell">
+                                    <img style="border-radius: 1%; padding: 50px" src="static/img/sbu.jpg" data-src="holder.js/300x200" alt="...">
+                                </div>
+                            </div>
+                        </a>
                         <h3>Exchange Student</h3>
                         <h4>Stony Brook University</h4>
                         <span>January 2012 - December 2012</span>
@@ -185,6 +234,13 @@
                         <span>2011</span>
                     </li>
                     <li class="event right">
+                        <a href="http://www.embeddedlab.org/" target="_blank">
+                            <div class="event-img thumbnail">
+                                <div style="display: table-cell">
+                                    <img class="img-responsive" style="border-radius: 1%" src="static/img/embedded.jpg" data-src="holder.js/300x200" alt="...">
+                                </div>
+                            </div>
+                        </a>
                         <h3>R&D Developer</h3>
                         <h4>Embedded Lab</h4>
                         <span>September 2010 - December 2012</span>
@@ -194,6 +250,13 @@
                         <span>2010</span>
                     </li>
                     <li class="event">
+                        <a href="http://www.ufcg.edu.br/" target="_blank">
+                            <div class="event-img thumbnail">
+                                <div style="display: table-cell">
+                                    <img style="border-radius: 1%" src="static/img/ufcg.png" data-src="holder.js/300x200" alt="...">
+                                </div>
+                            </div>
+                        </a>
                         <h3>Undergraduate Student</h3>
                         <h4>Federal University of Campina Grande</h4>
                         <span>August 2009 - April 2014</span>
@@ -221,22 +284,10 @@
 
                 </div>
             </div>
-
         </nav>
 
-        <div id="skill-row-template" style="display: none">
-            <div class="row">
-                <div class="col-md-2">
-                    <p>{{skillName}}</p>
-                </div>
-                <div class="col-md-10">
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="{{percentage}}" aria-valuemin="0" aria-valuemax="100" style="width: {{percentage}}%;">
-                            <span>{{comment}}</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div id="skill-badge-template" style="display: none">
+            <span class="label label-info">{{skillName}}</span>
         </div>
     </div>
 

@@ -212,19 +212,21 @@ html, body
   display: inline;
 }
 
+
+
 #projects
 {
-	height: auto !important; /* ie6 ignores !important, so this will be overridden below */
-    min-height: 100%; /* ie6 ignores min-height completely */
-    //height: 100%;
-	display: table;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    background: url("../img/project-bg.png") 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    color: @bg1-color;
+  height: auto !important; /* ie6 ignores !important, so this will be overridden below */
+  min-height: 100%; /* ie6 ignores min-height completely */
+  //height: 100%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background: url("../img/project-bg.png") 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  color: @bg1-color;
+  display: none;
   .container-header {
     margin-bottom: 3%;
     display: block;
@@ -250,23 +252,24 @@ html, body
 
   }
 }
-.skills {
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 5%;
-  div p {
-    font-size: 35%;
-  }
-}
 
 #skills
 {
-	height: auto !important; /* ie6 ignores !important, so this will be overridden below */
-    min-height: 100%; /* ie6 ignores min-height completely */
-    height: 100%;
-    background-color: @bg1-color;
-	display: table;
+  height: auto !important; /* ie6 ignores !important, so this will be overridden below */
+  min-height: 100%; /* ie6 ignores min-height completely */
+  height: 100%;
+  background-color: @bg1-color;
+  display: table;
+
+  .skills {
+    text-align: center;
+  }
+  .skills-badges {
+    font-size: 45%;
+  }
+  h1 {
+    margin-bottom: 3%;
+  }
 }
 
 .progress-bar-success {
@@ -362,7 +365,7 @@ html, body
   h1
   {
     margin-left: 3%;
-    display: inline;
+    display: block;
     font-family: "Tuffy-bold";
     font-size: 150%;
   }
@@ -381,7 +384,6 @@ html, body
 #timeline
 {
 	background-color: @bg1-color;
-	color: @bg1-font-color;
 
 	margin-top: 0px;
 	height: auto !important; /* ie6 ignores !important, so this will be overridden below */
@@ -396,7 +398,7 @@ html, body
     overflow: hidden;
     margin: 0 auto;
     padding: 0px;
-    font-size: 40%;
+    font-size: 70%;
 
     li {
       position: relative;
@@ -428,18 +430,34 @@ html, body
   .event {
     text-align: center;
     h3 {
+      font-size: 70%;
       margin: 0px;
     }
     h4 {
       margin: 0px;
-      font-size: 80%;
+      font-size: 60%;
     }
     span {
-      font-size: 70%;
+      font-size: 55%;
     }
     p {
       text-align: left;
     }
+
+    .event-img {
+      width: 100%;
+      min-height: 250px;
+      display: table;
+      border: 0;
+      div {
+        vertical-align: middle;
+      }
+      img {
+        width: 100%;
+        vertical-align: middle;
+      }
+    }
+
     width: 43%;
     border: 1px solid #0f98fa;
     padding: 12px;
