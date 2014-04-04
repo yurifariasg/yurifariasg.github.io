@@ -4,17 +4,6 @@ var Page = {
         var sectionObj = $("#" + section);
         var skillTemplate = $("#skill-badge-template").html()
 
-        /*var comment;
-        if (percentage <= 25)
-            comment = "beginner";
-        else if (percentage <= 50)
-            comment = "novice";
-        else if (percentage <= 75)
-            comment = "experienced";
-        else
-            comment = "experienced++";*/
-
-
         var output = Mustache.render(skillTemplate, {skillName: name});
         sectionObj.append(output)
         sectionObj.add(output);
@@ -53,31 +42,6 @@ var onLoadBody = function() {
     Page.addSkill("basic-skills", "Grails");
     Page.addSkill("basic-skills", "Photoshop CS3");
     Page.addSkill("basic-skills", "Unity");
-
-
-    /*Page.addSkill("mobile", "Android", "75");
-    Page.addSkill("mobile", "iOS", "25");
-    Page.addSkill("mobile", "Qt/S60", "50");
-
-    Page.addSkill("frontend", "HTML", "50");
-    Page.addSkill("frontend", "CSS", "50");
-    Page.addSkill("frontend", "Javascript", "50");
-
-    Page.addSkill("backend", "Grails", "50");
-    Page.addSkill("backend", ".NET", "75");
-    Page.addSkill("backend", "Flask", "25");
-
-    Page.addSkill("languages", "Java", "100");
-    Page.addSkill("languages", "Python", "75");
-    Page.addSkill("languages", "C#", "75");
-    Page.addSkill("languages", "C++", "50");
-    Page.addSkill("languages", "C", "25");
-    Page.addSkill("languages", "Lua", "25");
-
-    Page.addSkill("others", "MySQL", "50");
-    Page.addSkill("others", "Tomcat", "75");
-    Page.addSkill("others", "Apache Solr", "50");*/
-
 }
 
 var map;
@@ -122,7 +86,6 @@ $(".social-icon svg").on("click", function(event) {
         url = "https://twitter.com/yurifariasg";
     } else if (name == "linkedin") {
         url = "http://br.linkedin.com/pub/yuri-farias-gomes/35/52b/488/en";
-
     }
     window.open(url);
 });
