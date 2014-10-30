@@ -28,16 +28,17 @@ var onLoadBody = function() {
     Page.addSkill("working-skills", "Python");
     Page.addSkill("working-skills", "Tomcat");
     Page.addSkill("working-skills", "OpenGL ES 1.1");
+    Page.addSkill("working-skills", "MySQL");
+    Page.addSkill("working-skills", "HTTP");
 
 
     Page.addSkill("basic-skills", "iOS");
+    Page.addSkill("basic-skills", "C++");
     Page.addSkill("basic-skills", "Qt");
     Page.addSkill("basic-skills", "Grails");
     Page.addSkill("basic-skills", "Flask");
-    Page.addSkill("basic-skills", "C++");
     Page.addSkill("basic-skills", "C");
     Page.addSkill("basic-skills", "Lua");
-    Page.addSkill("basic-skills", "MySQL");
     Page.addSkill("basic-skills", "OpenGL");
     Page.addSkill("basic-skills", "Grails");
     Page.addSkill("basic-skills", "Photoshop CS3");
