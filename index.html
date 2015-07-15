@@ -32,7 +32,7 @@
               <li><a href="#home">HOME</a></li>
               <li><a href="#about">ABOUT</a></li>
               <li><a href="#skills">SKILLS</a></li>
-              <!--<li><a href="#projects">PROJECTS</a></li>-->
+              <li><a href="#projects">PROJECTS</a></li>
               <li><a href="#presentations">PRESENTATIONS</a></li>
               <li class="hidden-xs hidden-sm"><a href="#timeline">TIMELINE</a></li>
               <li><a href="#contact">CONTACT</a></li>
@@ -69,7 +69,7 @@
         <div id="about" class="section">
             <div class="content">
                 <h1>About.</h1>
-                <p>My name is Yuri Farias Gomes, I am a masters student from Joao Pessoa - Brazil studying at Federal University of Campina Grande. I love creating products that improve people's life, anywhere and anytime! I also love playing (and developing) video games, listening to music and watching a good movie! My biggest interests are related to game development, mobile/pervasive computing and web development (backend and frontend).</p>
+                <p>My name is Yuri Farias Gomes, I am a masters student from Joao Pessoa - Brazil studying at Federal University of Campina Grande. I love creating products that are used by a broad market. I also enjoy developing (and playing!) video games, listening to music and watching a good movie! My biggest technical interests are related to web development (backend and frontend), mobile/pervasive computing and game development. Oh, I am also an entrepreneurial enthusiast! ;)</p>
 
             </div>
         </div>
@@ -85,12 +85,12 @@
                 <h1>Coding skills</h1>
                 <div class="skills">
                     <h4>Working knowledge</h4>
-                    <h5>These are <i>some</i> of the skills that I have worked and I am comfortable using.</h5>
+                    <h5>These are <i>some</i> of the skills that I have worked and I am comfortable using or developing with.</h5>
                     <div id="working-skills" class="skills-badges">
                     </div>
 
                     <h4>Basic knowledge</h4>
-                    <h5>These are the skills that I have played with and have a basic understanding of their purpose and usage.</h5>
+                    <h5>These are the skills that I have played with or worked before and have a basic understanding of their purpose and usage.</h5>
                     <div id="basic-skills" class="skills-badges"></div>
 
 
@@ -113,41 +113,35 @@
                 </div>
             </div>
         </div>
-        <div id="projects" class="section">
+        <div id="projects" class="section" style="padding-top: 0px;">
             <div class="content small">
                 <div class="container-header">
-                <h1>Portfolio Projects</h1>
+                <h1>Side Projects</h1>
                 </div>
 
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="thumbnail">
-                            <img style="border-radius: 1%" src="static/img/proj1.png" data-src="holder.js/300x200" alt="...">
                             <div class="caption">
-                                <h3>Pilot Project</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                                <div class="img-container">
+                                    <img style="border-radius: 1%" src="static/img/promo.png" data-src="holder.js/300x200" alt="...">
+                                </div>
+                                <h3>Voice Controller for Spotify</h3>
+                                <p>An Android Wear app that allows users use their voice to start media playback on their phones from an Android Wear device. The main motivation to create this app was to play songs when you have your hands dirty (ie. when eating pizza!). The app was created when Android Wear was released and there was no alternatives to the Google Play Music service. <a href="https://play.google.com/store/apps/details?id=com.voicecontroller" target="blank">Google Play Link</a></p>
                             </div>
                         </div>
                     </div>
-                    </div>
+                </div>
+                
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="thumbnail">
-                            <img src="static/img/proj1.png" data-src="holder.js/300x200" alt="...">
                             <div class="caption">
-                                <h3>Pilot Project</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
-                            </div>
-                        </div>
-                    </div>
-                    </div>
-                <div class="row">
-                    <div class="col-sm-12">
-                        <div class="thumbnail">
-                            <img src="static/img/proj1.png" data-src="holder.js/300x200" alt="...">
-                            <div class="caption">
-                                <h3>Pilot Project</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                                <div class="img-container">
+                                    <img style="border-radius: 1%" src="static/img/screenshot-jc.png" data-src="holder.js/300x200" alt="...">
+                                </div>
+                                <h3>Jungle Chief ("Pilot Project")</h3>
+                                <p>This was a game started as a side school project with a couple of friends highly motivated to build games. The main idea behind this project is to allow one or two players to compete simultaneously on the same device. Players race and fight in a "Mario Kart"-like game to cross the finish line. The game was created using only OpenGL ES 1.1 and Box2D. We had plans to port to Unity or other cross-platform framework but unfortunately the project was discountinued before this happens. <a href="https://github.com/yurifariasg/ArretadoGames">Github Link</a></p>
                             </div>
                         </div>
                     </div>
@@ -201,8 +195,24 @@
             <div class="content">
                 <h1>Timeline</h1>
                 <ul class="line">
-                    <li class="year">
+                    <li class="year" style="margin-bottom:20px;">
                         <span>Present</span>
+                    </li>
+                    <li class="event right">
+                        <a href="http://www.embeddedlab.org/" target="_blank">
+                            <div class="event-img thumbnail">
+                                <div style="display: table-cell">
+                                    <img class="img-responsive" style="border-radius: 1%" src="static/img/embedded.jpg" data-src="holder.js/300x200" alt="...">
+                                </div>
+                            </div>
+                        </a>
+                        <h3>Software Enginner</h3>
+                        <h4>@ Embedded Lab</h4>
+                        <span>April 2015 - Current</span>
+                        <p>Currently developing Android apps integrated with Sony Services.</p>
+                    </li>
+                    <li class="year middle">
+                        <span>2015</span>
                     </li>
                     <li class="event">
                         <a href="http://jawbone.com" target="_blank">
@@ -215,7 +225,7 @@
                         <h3>Software Engineer Intern</h3>
                         <h4>@ Jawbone</h4>
                         <span>September 2014 - December 2014</span>
-                        <p>Currently working on the platform team adding new features and enhancing the web APIs of the company.</p>
+                        <p>Implemented a smart architecture to integrate external services into the UP platform to fetch only needed information, based on data from the platform.</p>
                     </li>
                     <li class="event right">
                         <a href="http://www.embeddedlab.org/" target="_blank">
@@ -360,10 +370,10 @@
                 <div class="row">
                     <div class="col-md-6" style="margin-top: 2%">
                         <h4>Email:</h4>
-                        <a href="mailto:yurifariasg@gmail.com"> <address>yurifariasg@gmail.com</address></a>
+                        <a href="mailto:me@ygom.es"><address>me@ygom.es</address></a>
                         <h4>Phone:</h4>
-                        <address>+55 83 81052486 (Vivo)<br>
-                            +1 631 703 8443 (Google Voice)</address>
+                        <address>+55 83 981052486 (Brazil)<br>
+                            +1 631 703 8443 (US - Google Voice)</address>
                         <a href="static/files/yuri-resume.pdf" target="_blank"><h4>Resume</h4></a>
                     </div>
                     <div class="col-md-6">
