@@ -79,7 +79,7 @@ $(".social-icon svg").on("click", function(event) {
     } else if (name == "github") {
         url = "https://github.com/yurifariasg";
     } else if (name == "instagram") {
-        url = "http://instagram.com/yurifg";
+        url = "http://instagram.com/yurifariasg";
     } else if (name == "twitter") {
         url = "https://twitter.com/yurifariasg";
     } else if (name == "linkedin") {
