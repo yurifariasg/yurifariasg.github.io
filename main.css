@@ -110,22 +110,37 @@ https://github.com/h5bp/Effeckt.css */
 }
 @media screen and (min-width: 300px) {
   body {
-    font-size: 30px;
+    font-size: 200%;
+  }
+  .blog-page {
+    max-width: 80%;
+  }
+}
+@media screen and (max-width: 750px) {
+  .content,
+  .blog-page {
+    padding-top: 45px !important;
   }
 }
 @media screen and (min-width: 600px) {
   body {
-    font-size: 35px;
+    font-size: 300%;
   }
 }
 @media screen and (min-width: 1000px) {
   body {
-    font-size: 40px;
+    font-size: 400%;
+  }
+  .blog-page {
+    max-width: 60%;
   }
 }
 @media screen and (min-width: 1440px) {
   body {
-    font-size: 50px;
+    font-size: 600%;
+  }
+  .blog-page {
+    font-size: 70%;
   }
 }
 #home {
@@ -376,9 +391,43 @@ body {
   display: inline-block;
   color: inherit;
 }
-.content p {
+.content p,
+.content blockquote {
   font-size: 55%;
   text-align: justify;
+}
+.content ul {
+  font-size: 40%;
+}
+.blog-page {
+  padding: 5%;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.blog-post h1 {
+  margin-left: 0%;
+  margin-bottom: 20px;
+  font-size: 160%;
+}
+.blog-post h2 {
+  font-size: 90%;
+}
+.blog-post h3 {
+  font-size: 80%;
+}
+.blog-post h4 {
+  font-size: 70%;
+}
+.blog-post p {
+  font-size: 60%;
+  margin: 0 0 18px;
+}
+.blog-post li {
+  font-size: 60%;
+}
+.blog-post li ul {
+  font-size: 150%;
 }
 #timeline {
   background-color: #ffffff;
