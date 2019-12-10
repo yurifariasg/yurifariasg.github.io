@@ -217,6 +217,9 @@ body {
 .social-networks .social-icon svg:hover {
   fill: #d9d9d9;
 }
+.social-networks .social-icon svg {
+  fill: #ffffff;
+}
 #comment {
   resize: vertical;
 }
