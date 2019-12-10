@@ -344,12 +344,13 @@ body {
   text-align: right;
   font-size: 60%;
 }
-#contact {
+#contact,
+#blog-footer {
   margin-top: 0px;
   background-image: url(../images/bg-repeat2.jpg);
   height: auto !important;
   /* ie6 ignores !important, so this will be overridden below */
-  min-height: 50%;
+  min-height: 20%;
   /* ie6 ignores min-height completely */
   height: 100%;
   display: table;
@@ -358,16 +359,19 @@ body {
   border: solid #000000 1px;
   font-family: Helvetica;
 }
-#contact h4 {
+#contact h4,
+#blog-footer h4 {
   font-size: 45%;
   font-family: Helvetica;
   color: darkgray;
 }
-#contact address {
+#contact address,
+#blog-footer address {
   font-size: 35%;
   color: #898989;
 }
-#contact a:hover {
+#contact a:hover,
+#blog-footer a:hover {
   color: #808080 !important;
 }
 .section {
@@ -408,10 +412,14 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-.blog-post h1 {
+.blog-page .blog-title h1 {
   margin-left: 0%;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   font-size: 160%;
+}
+.blog-page .blog-title h5 {
+  margin-top: 5px;
+  margin-bottom: 5%;
 }
 .blog-post h2 {
   font-size: 90%;
