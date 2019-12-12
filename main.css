@@ -344,8 +344,7 @@ body {
   text-align: right;
   font-size: 60%;
 }
-#contact,
-#blog-footer {
+#contact {
   margin-top: 0px;
   background-image: url(../images/bg-repeat2.jpg);
   height: auto !important;
@@ -359,19 +358,16 @@ body {
   border: solid #000000 1px;
   font-family: Helvetica;
 }
-#contact h4,
-#blog-footer h4 {
+#contact h4 {
   font-size: 45%;
   font-family: Helvetica;
   color: darkgray;
 }
-#contact address,
-#blog-footer address {
+#contact address {
   font-size: 35%;
   color: #898989;
 }
-#contact a:hover,
-#blog-footer a:hover {
+#contact a:hover {
   color: #808080 !important;
 }
 .section {
@@ -420,6 +416,9 @@ body {
 .blog-page .blog-title h5 {
   margin-top: 5px;
   margin-bottom: 5%;
+}
+#blog-footer .content {
+  padding-top: 0px;
 }
 .blog-post h2 {
   font-size: 90%;
